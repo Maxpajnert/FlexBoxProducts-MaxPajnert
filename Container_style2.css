@@ -1,0 +1,112 @@
+
+/* prudukternas main box */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-content: center;
+
+}
+
+/* Alla bildernas setup */
+.minions {
+    justify-content: center;
+    flex: 0 24%;
+    margin-bottom: 2%;
+}
+.minionbild {
+    min-height: 10em;
+
+}
+
+.dropbutton {
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+    color: rgb(110, 5, 96);
+
+    width: 100%;
+    min-height: 2.55em;
+    
+
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+
+}
+
+.dropbutton:hover, .dropbutton:focus {
+    background-color:rgb(110, 5, 96);
+    color: white;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 19.5em;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding-bottom: 5%;
+    text-decoration: none;
+    display: block;
+}
+
+.show {
+    display:block;
+}
+
+.info-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 20em;
+    margin-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    color:rgb(110, 5, 96);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+
+    box-shadow: 0 12px 10px 0 rgba(0,0,0,0.24), 3px 20px 35px 4px rgba(0,0,0,0.19);
+    border: rgb(10, 10, 10);
+
+}
+
+.contactItem1 {
+    display: flex;
+    justify-content: space-around;
+    background-color:rgb(255, 255, 255);
+    height: 100%;
+    width: 100%;
+    flex-grow: 1;
+
+}
+.contactItem2 {
+    display: flex;
+    justify-content: space-around;
+    justify-content: left;
+    flex-grow: 1;
+
+    margin-top: 2em;
+    margin-left: 5em;
+
+    background-color:rgb(255, 255, 255);
+    width: 100%;
+
+}
+.item1-Gru {
+    width: 60%;
+    min-height: 100%;
+}

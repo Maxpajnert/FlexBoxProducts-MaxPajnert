@@ -1,0 +1,245 @@
+
+/* Bildspels container */
+.slideshow-container {
+    flex-wrap: wrap;
+    max-width: 21.428em;
+    height: 28.57em;
+    position: relative;
+    margin: auto;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    border: rgb(10, 10, 10);
+}
+
+.slideshow-img {
+    max-height: 28.57em;
+    max-width: 21.428em;
+}
+
+/* gömmer bilder by deafult */
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    transition: 1s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+    size: 110%;
+}
+
+/* prickarna som visar vilken bild man är på */
+.dot {
+    cursor: pointer;
+    height: 1em;
+    width: 1em;
+    margin: 1.6em 0.6em;
+    background-color: rgb(187, 187, 187);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 1s ease;
+}
+
+/* mörkare färg vid muspekare ovan, Activate är med för kunna klickas */
+.active, .dot:hover {
+    background-color:  rgb(112, 112, 112);
+}
+
+/* Caption texten */
+.caption {
+    color:rgb(0, 0, 0);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    padding: 9px 12px;
+    position: absolute;
+    bottom: 9px;
+    width: 100%;
+    text-align: center;
+}
+
+/* fade animationen */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+  .fot-container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    position: flex-end;
+
+    height: 3.5em;
+
+    /* Skugga under */
+    box-shadow: 0 12px 10px 0 rgba(0,0,0,0.24), 3px 20px 35px 4px rgba(0,0,0,0.19);
+    border: rgb(10, 10, 10);
+
+    background-color: rgb(255, 255, 255);
+
+        /* Gjorde så att min navigations bar går hela vägen ut till sidorna */
+        width: 101.65%;
+        height: 20%;
+        margin-left: -1%;
+        margin-right: -1%;
+        margin-bottom: -0.68%;
+
+  }
+
+  .fot-padding {
+      margin-top: 7%;
+  }
+
+
+  .banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    height: 5em;
+    width: 40em;
+    margin: 3em 4em;
+
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 3px 15px 50px 3px rgba(0,0,0,0.19);
+    border: rgb(10, 10, 10);
+
+    background-color:rgb(255, 255, 255);
+
+  }
+
+/* meny containern högst upp */
+.container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    text-align: center;
+    position: aboslute;
+    
+    /* Skugga under */
+    box-shadow: 0 12px 10px 0 rgba(0,0,0,0.24), 3px 20px 35px 4px rgba(0,0,0,0.19);
+    border: rgb(10, 10, 10);
+
+    background-color: rgb(255, 255, 255);
+    color: rgb(110, 5, 96);
+
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    /* Gjorde så att min navigations bar går hela vägen ut till sidorna */
+    width: 101.65%;
+    height: 20%;
+    margin-left: -1%;
+    margin-right: -1%;
+    margin-top: -0.68%;
+
+}
+
+.container a {
+    display: flex;
+    align-items: center;
+    justify-content: enter;
+    justify-content: space-around;
+    text-align: center;
+    color:rgb(110, 5, 96);
+    
+    width: 100%;
+    height: 20%;
+}
+
+.container a:link {
+    text-decoration: none;
+}
+
+.container a:hover {
+    background-color:rgb(110, 5, 96);
+
+    color:rgb(255, 255, 255);
+}
+
+/* Löste så att min kundvagnsbild byttes när man hovrade över den (:hover är den sista) */
+.main-item-4 {
+    position: relative;
+    height: 4.4em;
+    top: 0;
+    right: 0;
+    opacity: 1;
+}
+
+.item-4:hover .main-item-4{
+    opacity: 0;
+}
+
+.hover-item-4 {
+    position: absolute;
+    left: 5.9em;
+
+}
+
+.item-4:hover .hover-item-4 {
+    opacity: 1;
+}
+
+@keyframes container {
+
+}
+
+img {
+    max-height: 2.85em;
+}
+.all-items{
+
+    width: 100%;
+}
+.item {
+
+}
+    
+.item-1 {
+    
+}
+.item-2 {
+    flex-grow: 1;
+}
+.item-3 {
+
+}
+.item-4 {
+    Position: relative;
+    height: 3.2em;
+    top: 0;
+    left: 0;
+
+}
